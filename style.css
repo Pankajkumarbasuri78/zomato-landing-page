@@ -65,6 +65,36 @@ body{
     font-size: 30px;
     margin: 20px 0;
 }
+.Explore__menu__text{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.food__card{
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.food__card_image__container{
+    width: 100%;
+}
+.food__image{
+    width: 100%;
+    border-radius: 8px 8px 0 0;/* top right bottom left*/
+    
+}
+.food__card__description{
+    padding: 15px;
+}
+.nav__item:hover{
+    border: 2px solid red;
+}
+
+
+
+
 
 @media (min-width:768px) {
     .navbar{
@@ -77,6 +107,43 @@ body{
         align-items: center;
         margin-top: 20px;
     }
+    .explore__menu__lists{
+        margin-top: 40px;
+        display: flex;
+        gap: 15px;
+        padding: 0 30px;
+    }
+    #pizza__card{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    .explore__menu__view__more{
+        display: flex;
+        justify-content: center;
+    }
+    .button__primary{
+        font-size: 15px;
+    }
+    .explore__menu__container{
+        position: relative;
+    }
+    .explore__menu__gradient__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+        );
+        transform: skewY(-5deg);
+        z-index: -3;
+    }
 }
 @media (min-width:1020px) {
     .container{
@@ -88,7 +155,7 @@ body{
     }
     .button__primary{
         padding: 20px;
-        font-size: 20px;
+        font-size: 15px;
     }
     .hero__container{
         
@@ -99,9 +166,12 @@ body{
     .hero__text{
         font-size: 35px;
     }
-}
-.nav__item:hover{
-    border: 2px solid red;
+    .explore__menu__lists{
+        gap: 40px;
+    }
+    .Explore__menu__text{
+        font-size: 40px;
+    }
 }
 
 @media (min-width: 1400px) {
